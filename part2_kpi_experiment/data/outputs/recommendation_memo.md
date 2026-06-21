@@ -37,8 +37,6 @@ Supporting metrics like landing page visit rate, trial start rate, and onboardin
 
 ## KPI Tree Explanation
 
-See `outputs/kpi_tree.png` / `screenshots/kpi_tree_preview.png`.
-
 The North Star (Paid Conversion Rate) breaks down into three primary drivers:
 1. **Activation Quality** (onboarding completion rate) → sub-drivers: trial start rate, time-to-first-value
 2. **Trial Engagement** (trial start rate & engagement score) → sub-drivers: engagement score, support friction
@@ -68,7 +66,7 @@ Every step of the funnel improved in Treatment, and converted users in Treatment
 
 ## Hypothesis Test Interpretation
 
-A two-proportion z-test on paid conversion rate produced **Z = 3.264, p = 0.0011** (two-tailed, α = 0.05), with a 95% confidence interval on the difference of [1.56 pp, 6.15 pp]. We reject the null hypothesis: the lift in conversion is statistically significant and very unlikely to be due to random chance. Full notes in `analysis/hypothesis_test_notes.md`.
+A two-proportion z-test on paid conversion rate produced **Z = 3.264, p = 0.0011** (two-tailed, α = 0.05), with a 95% confidence interval on the difference of [1.56 pp, 6.15 pp]. We reject the null hypothesis: the lift in conversion is statistically significant and very unlikely to be due to random chance. 
 
 ## Guardrail Analysis
 
@@ -115,10 +113,3 @@ An alternative, more conservative option leadership could choose instead is to *
 - **Short observation window:** Revenue and refunds are measured at 30 days; longer-term retention, churn, and lifetime value are not observed in this dataset and could change the calculus.
 - **No causal claim beyond conversion:** While the conversion result is causal (from random assignment), the segment-level and guardrail findings are observational subgroup comparisons within the experiment and should be treated as directional, not independently confirmed.
 
-## Next Steps
-
-1. Brief the support team on expected ticket volume increase and ensure adequate staffing before full launch.
-2. Stand up a post-launch dashboard tracking conversion rate, refund rate, support ticket rate, and revenue per converted user weekly for the first 60–90 days.
-3. Investigate *why* Treatment converts more Free-tier and lower-value users — is the campaign messaging/incentive structure attracting more price-sensitive signups, and is that an acceptable trade-off long-term?
-4. Re-run the refund-rate comparison once a larger sample of converted users has accumulated post-launch, since the current test was underpowered to confirm or rule out that risk.
-5. Consider a follow-up experiment specifically targeting Basic-plan users, since the current campaign shows little benefit for that segment.

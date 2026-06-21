@@ -2,7 +2,7 @@
 
 ## Business Context
 
-A subscription-based digital product company launched a new onboarding and activation campaign aimed at improving user conversion and early engagement. Users were randomly split into two groups:
+A subscription based digital product company launched a new onboarding and activation campaign aimed at improving user conversion and early engagement. Users were randomly split into two groups:
 
 - **Control:** Existing onboarding experience
 - **Treatment:** New campaign experience
@@ -14,7 +14,6 @@ A subscription-based digital product company launched a new onboarding and activ
 - **Risks to monitor:** Refund rate, support ticket volume, revenue quality (revenue per converted user), and time-to-convert.
 - **Evidence required:** A statistically valid Control vs Treatment comparison on the North Star metric, a guardrail review, and a segment-level check.
 
-The full problem framing and final recommendation are detailed in `outputs/recommendation_memo.md`.
 
 ## Dataset Description
 
@@ -85,30 +84,6 @@ A fourth metric, **engagement score**, actually improved in Treatment, and **day
 - A small number of revenue outliers among converted users affect the revenue-per-converted-user comparison; these were investigated and retained (see `analysis/experiment_analysis.xlsx`, sheet `Revenue_Outliers`) given the data is plausible (e.g., upsells/bundled purchases) rather than clear errors.
 - Segment-level findings are observational subgroup comparisons within the experiment and should be treated as directional rather than independently statistically confirmed.
 
-## Screenshots Included
 
-| File | Shows |
-|---|---|
-| `screenshots/summary_metrics.png` | Control vs Treatment summary table |
-| `screenshots/hypothesis_test_output.png` | Two-proportion z-test inputs, output, and decision |
-| `screenshots/kpi_tree_preview.png` | KPI tree image |
 
-## Repository Structure
-
-```
-part2_kpi_experiment/
-├── data/
-│   └── campaign_experiment_data.xlsx
-├── analysis/
-│   ├── experiment_analysis.xlsx
-│   └── hypothesis_test_notes.md
-├── outputs/
-│   ├── kpi_tree.png
-│   ├── experiment_summary.xlsx
-│   └── recommendation_memo.md
-├── screenshots/
-│   ├── summary_metrics.png
-│   ├── hypothesis_test_output.png
-│   └── kpi_tree_preview.png
-└── README.md
 ```

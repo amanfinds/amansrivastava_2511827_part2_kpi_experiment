@@ -33,8 +33,6 @@ Paid conversion rate is the North Star metric for this experiment (see `README.m
 - **P-value (two-tailed): 0.0011**
 - 95% confidence interval on the difference: **[1.56 pp, 6.15 pp]**
 
-Full calculation is shown in `analysis/experiment_analysis.xlsx` (sheet: `Hypothesis_Test`) and captured in `screenshots/hypothesis_test_output.png`.
-
 ## Decision Rule
 Reject H0 if p-value < α (0.05).
 

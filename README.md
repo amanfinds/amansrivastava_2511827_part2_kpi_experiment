@@ -1,4 +1,4 @@
-# Part 2: KPI Framework, Business Experiment Analysis & Decision Recommendation
+#  KPI Framework, Business Experiment Analysis & Decision Recommendation
 
 ## Business Context
 
